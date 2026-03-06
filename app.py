@@ -5,7 +5,7 @@ import pandas as pd
 # Application page configuration
 st.set_page_config(
     page_title="Bangalore House Price Predictor",
-    page_icon="🏠",
+    page_icon="houseLogo.png",
     layout="wide"
 )
 
@@ -23,7 +23,7 @@ df = pd.read_csv("cleaned_data.csv")
 # Sidebar layout and information
 with st.sidebar:
     st.title("🏠 Bangalore House Price Prediction")
-    st.image("house_logo.png", use_container_width=True)
+    st.image("houseLogo.png", use_container_width=True)
 
     st.markdown("---")
 
@@ -120,3 +120,4 @@ if predict:
 # Footer information
 st.markdown("---")
 st.caption("Machine Learning Project | Bangalore House Price Prediction")
+
